@@ -1,0 +1,65 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+
+	<title>My Parse App</title>
+	<meta name="description" content="My Parse App">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+</head>
+
+<body>
+	
+	<div id="main">
+		
+		<div id="getStarted">
+			<button id="showSignup" type="button" class="btn btn-primary">Signup</button>
+			<button id="showLogin" type="button" class="btn btn-primary">Login</button>
+		</div>
+
+		<form id="signup">
+			<div class="form-group">
+				<label for="suUsername">Username</label>
+    			<input type="text" class="form-control" id="suUsername" placeholder="Pick a username">
+			</div>
+			<div class="form-group">
+				<label for="suPassword">Password</label>
+    			<input type="password" class="form-control" id="suPassword" placeholder="Make it secure!">
+			</div>
+			<div class="form-group">
+				<label for="suEmail">Email Address</label>
+    			<input type="email" class="form-control" id="suEmail" placeholder="ex. me@me.com">
+			</div>
+			<div class="form-group">
+				<label for="suPhone">Phone Number</label>
+    			<input type="text" class="form-control" id="suPhone" placeholder="ex. (123) 456-7890">
+			</div>
+			<button type="submit" class="btn btn-primary">Signup</button>
+		</form>
+
+		<form id="login">
+			<div class="form-group">
+				<label for="loUsername">Username</label>
+    			<input type="text" class="form-control" id="loUsername" placeholder="">
+			</div>
+			<div class="form-group">
+				<label for="loPassword">Password</label>
+    			<input type="password" class="form-control" id="loPassword" placeholder="">
+			</div>
+			<button type="submit" class="btn btn-primary">Login</button>
+		</form>
+
+		<section id="data">
+		</section>
+
+	</div>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
